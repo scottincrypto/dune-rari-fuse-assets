@@ -19,7 +19,7 @@ def main():
 
 def get_all_assets():
     """Gets the pools from the FusePoolDirectory and gets the assets from each pool
-        Takes an 
+        Takes an
     """
     #Contract('FusePoolDirectory').set_alias(alias=None)
     try: 
@@ -34,7 +34,7 @@ def get_all_assets():
 
     index = 0
     pool_start = 0 #skip pools & start here
-    pool_count = 10 #stop before index for this many pools
+    pool_count = 1000 #stop before index for this many pools
     all_assets = []
     for pool in all_pools:
         if index < pool_count and index >= pool_start:
