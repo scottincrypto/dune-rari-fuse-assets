@@ -120,6 +120,9 @@ def get_assets_from_pool(pool_index, pool_name, comptroller):
 def debug_tokens():
     """Used to debug a troublesome token"""
     asset = '0x85b294139E77E7dE519A9bA9553D274d79E4812e'
+    #using a local copy for speed & convenience.  Retrieved from etherscan '0x67Db14E73C2Dce786B5bbBfa4D010dEab4BBFCF9'
+    cerc20_abi = json.loads(open('interfaces/CErc20Delegate.json').read())
+    
     try: 
         Contract('token_' + asset).alias
     except ValueError:
