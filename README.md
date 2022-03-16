@@ -32,7 +32,7 @@ npm install -g ganache-cli
 
 3. Set up Brownie Environment
 
-Configure .env file the rari_fuse_sql folder with an Infura or Alchemy API ID, and an etherscan API id:
+Configure .env file in the rari_fuse_sql folder with an Infura or Alchemy API ID, and an etherscan API id:
 
 ```
 export ETHERSCAN_TOKEN=<your etherscan api id>
