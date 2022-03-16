@@ -1,0 +1,6 @@
+dotenv: .env
+
+#autofetch_sources: true
+
+networks:
+  default: mainnet
