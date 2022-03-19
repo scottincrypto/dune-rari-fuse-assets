@@ -2,7 +2,13 @@
 
 There isn't enough information in on-chain calls & events to easily get a full picture of Rari Fuse pools on Dune Analytics.  This eth-brownie script queries the Rari Fuse contracts on Ethereum mainnet and creates a [Dune User-Generated Table](https://docs.dune.xyz/data-tables/data-tables/user-generated) SQL file containing the Fuse Pool, Fuse fToken and underlying token details.
 
-The outputs of this are implemented in the Dune table dune_user_generated.rari_capital_fuse_ftokens in the Ethereum tables.  It will be updated from time to time.
+The outputs of this are implemented in the Dune Ethereum tables/views:
+- rari_capital.view_rari_fuse_ftokens
+- dune_user_generated.rari_capital_fuse_ftokens
+
+They will be updated from time to time.  The rari_capital.view_rari_fuse_ftokens may lag as it requires a PR to be processed by Dune to update.
+
+
 
 ## Prerequisites
 
